@@ -19,7 +19,7 @@ $ npm install -g @apollosolutions/graphql-mock-cli
 $ graphql-mock-cli COMMAND
 running command...
 $ graphql-mock-cli (--version)
-@apollosolutions/graphql-mock-cli/0.0.1 darwin-arm64 node-v22.11.0
+@apollosolutions/graphql-mock-cli/0.0.1 linux-x64 node-v18.20.4
 $ graphql-mock-cli --help [COMMAND]
 USAGE
   $ graphql-mock-cli COMMAND
@@ -29,7 +29,6 @@ USAGE
 # Commands
 <!-- commands -->
 * [`graphql-mock-cli help [COMMAND]`](#graphql-mock-cli-help-command)
-* [`graphql-mock-cli mock SCHEMA`](#graphql-mock-cli-mock-schema)
 * [`graphql-mock-cli plugins`](#graphql-mock-cli-plugins)
 * [`graphql-mock-cli plugins add PLUGIN`](#graphql-mock-cli-plugins-add-plugin)
 * [`graphql-mock-cli plugins:inspect PLUGIN...`](#graphql-mock-cli-pluginsinspect-plugin)
@@ -60,31 +59,6 @@ DESCRIPTION
 ```
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v6.2.16/src/commands/help.ts)_
-
-## `graphql-mock-cli mock SCHEMA`
-
-Start a mock GraphQL server from a file
-
-```
-USAGE
-  $ graphql-mock-cli mock SCHEMA [--port <value>]
-
-ARGUMENTS
-  SCHEMA  Schema file to mock
-
-FLAGS
-  --port=<value>  [default: 4000] HTTP port for server
-
-DESCRIPTION
-  Start a mock GraphQL server from a file
-
-EXAMPLES
-  $ graphql-mock-cli mock schema.graphql
-
-  $ graphql-mock-cli mock schema.graphql --port 8080
-```
-
-_See code: [src/commands/mock/index.ts](https://github.com/apollosolutions/graphql-mock-cli/blob/v0.0.1/src/commands/mock/index.ts)_
 
 ## `graphql-mock-cli plugins`
 
