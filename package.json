@@ -1,0 +1,79 @@
+{
+  "name": "@apollosolutions/graphql-mock-cli",
+  "description": "Mock a GraphQL schema in one command",
+  "version": "0.0.1",
+  "author": "Apollo Solutions",
+  "bin": {
+    "graphql-mock-cli": "./bin/run.js"
+  },
+  "bugs": "https://github.com/apollosolutions/graphql-mock-cli/issues",
+  "dependencies": {
+    "@apollo/server": "^4.11.2",
+    "@faker-js/faker": "^9.2.0",
+    "@graphql-tools/mock": "^9.0.5",
+    "@graphql-tools/schema": "^10.0.7",
+    "@graphql-tools/utils": "^10.5.5",
+    "@oclif/core": "^4.0.31",
+    "@oclif/plugin-help": "^6.2.16",
+    "@oclif/plugin-plugins": "^5.4.15",
+    "graphql": "^16.9.0"
+  },
+  "devDependencies": {
+    "@oclif/prettier-config": "^0.2.1",
+    "@oclif/test": "^4.1.0",
+    "@types/chai": "^4.3.20",
+    "@types/mocha": "^10.0.9",
+    "@types/node": "^18.19.64",
+    "chai": "^4.5.0",
+    "eslint": "^8.57.1",
+    "eslint-config-oclif": "^5",
+    "eslint-config-oclif-typescript": "^3",
+    "eslint-config-prettier": "^9",
+    "mocha": "^10",
+    "oclif": "^4",
+    "shx": "^0.3.3",
+    "ts-node": "^10",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "files": [
+    "/bin",
+    "/dist",
+    "/oclif.manifest.json"
+  ],
+  "homepage": "https://github.com/apollosolutions/graphql-mock-cli",
+  "keywords": [
+    "oclif"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "type": "module",
+  "oclif": {
+    "bin": "graphql-mock-cli",
+    "dirname": "graphql-mock-cli",
+    "commands": "./dist/commands",
+    "plugins": [
+      "@oclif/plugin-help",
+      "@oclif/plugin-plugins"
+    ],
+    "topicSeparator": " ",
+    "topics": {
+      "hello": {
+        "description": "Say hello to the world and others"
+      }
+    }
+  },
+  "repository": "apollosolutions/graphql-mock-cli",
+  "scripts": {
+    "build": "shx rm -rf dist && tsc -b",
+    "lint": "eslint . --ext .ts",
+    "postpack": "shx rm -f oclif.manifest.json",
+    "posttest": "npm run lint",
+    "prepack": "oclif manifest && oclif readme",
+    "test": "mocha --forbid-only \"test/**/*.test.ts\"",
+    "version": "oclif readme && git add README.md"
+  },
+  "types": "dist/index.d.ts"
+}
