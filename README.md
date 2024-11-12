@@ -1,15 +1,12 @@
 @apollosolutions/graphql-mock-cli
 =================
-
-Mock a GraphQL schema in one command
-
-**The code in this repository is experimental and has been provided for reference purposes only. Community feedback is welcome but this project may not be supported in the same way that repositories in the official [Apollo GraphQL GitHub organization](https://github.com/apollographql) are. If you need help you can file an issue on this repository, [contact Apollo](https://www.apollographql.com/contact-sales) to talk to an expert, or create a ticket directly in Apollo Studio.**
-
-
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
 [![Version](https://img.shields.io/npm/v/@apollosolutions/graphql-mock-cli.svg)](https://npmjs.org/package/@apollosolutions/graphql-mock-cli)
 [![Downloads/week](https://img.shields.io/npm/dw/@apollosolutions/graphql-mock-cli.svg)](https://npmjs.org/package/@apollosolutions/graphql-mock-cli)
 
+Mock a GraphQL schema in one command
+
+**The code in this repository is experimental and has been provided for reference purposes only. Community feedback is welcome but this project may not be supported in the same way that repositories in the official [Apollo GraphQL GitHub organization](https://github.com/apollographql) are. If you need help you can file an issue on this repository, [contact Apollo](https://www.apollographql.com/contact-sales) to talk to an expert, or create a ticket directly in Apollo Studio.**
 
 <!-- toc -->
 * [Usage](#usage)
@@ -31,9 +28,8 @@ USAGE
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`graphql-mock-cli hello PERSON`](#graphql-mock-cli-hello-person)
-* [`graphql-mock-cli hello world`](#graphql-mock-cli-hello-world)
 * [`graphql-mock-cli help [COMMAND]`](#graphql-mock-cli-help-command)
+* [`graphql-mock-cli mock SCHEMA`](#graphql-mock-cli-mock-schema)
 * [`graphql-mock-cli plugins`](#graphql-mock-cli-plugins)
 * [`graphql-mock-cli plugins add PLUGIN`](#graphql-mock-cli-plugins-add-plugin)
 * [`graphql-mock-cli plugins:inspect PLUGIN...`](#graphql-mock-cli-pluginsinspect-plugin)
@@ -44,48 +40,6 @@ USAGE
 * [`graphql-mock-cli plugins uninstall [PLUGIN]`](#graphql-mock-cli-plugins-uninstall-plugin)
 * [`graphql-mock-cli plugins unlink [PLUGIN]`](#graphql-mock-cli-plugins-unlink-plugin)
 * [`graphql-mock-cli plugins update`](#graphql-mock-cli-plugins-update)
-
-## `graphql-mock-cli hello PERSON`
-
-Say hello
-
-```
-USAGE
-  $ graphql-mock-cli hello PERSON -f <value>
-
-ARGUMENTS
-  PERSON  Person to say hello to
-
-FLAGS
-  -f, --from=<value>  (required) Who is saying hello
-
-DESCRIPTION
-  Say hello
-
-EXAMPLES
-  $ graphql-mock-cli hello friend --from oclif
-  hello friend from oclif! (./src/commands/hello/index.ts)
-```
-
-_See code: [src/commands/hello/index.ts](https://github.com/apollosolutions/graphql-mock-cli/blob/v0.0.1/src/commands/hello/index.ts)_
-
-## `graphql-mock-cli hello world`
-
-Say hello world
-
-```
-USAGE
-  $ graphql-mock-cli hello world
-
-DESCRIPTION
-  Say hello world
-
-EXAMPLES
-  $ graphql-mock-cli hello world
-  hello world! (./src/commands/hello/world.ts)
-```
-
-_See code: [src/commands/hello/world.ts](https://github.com/apollosolutions/graphql-mock-cli/blob/v0.0.1/src/commands/hello/world.ts)_
 
 ## `graphql-mock-cli help [COMMAND]`
 
@@ -106,6 +60,31 @@ DESCRIPTION
 ```
 
 _See code: [@oclif/plugin-help](https://github.com/oclif/plugin-help/blob/v6.2.16/src/commands/help.ts)_
+
+## `graphql-mock-cli mock SCHEMA`
+
+Start a mock GraphQL server from a file
+
+```
+USAGE
+  $ graphql-mock-cli mock SCHEMA [--port <value>]
+
+ARGUMENTS
+  SCHEMA  Schema file to mock
+
+FLAGS
+  --port=<value>  [default: 4000] HTTP port for server
+
+DESCRIPTION
+  Start a mock GraphQL server from a file
+
+EXAMPLES
+  $ graphql-mock-cli mock schema.graphql
+
+  $ graphql-mock-cli mock schema.graphql --port 8080
+```
+
+_See code: [src/commands/mock/index.ts](https://github.com/apollosolutions/graphql-mock-cli/blob/v0.0.1/src/commands/mock/index.ts)_
 
 ## `graphql-mock-cli plugins`
 
