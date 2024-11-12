@@ -32,7 +32,6 @@ ehthumbs.db
 **/.DS_Store
 
 # Build
-/dist
 /tmp
 oclif.manifest.json
 
