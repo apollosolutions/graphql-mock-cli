@@ -35,7 +35,8 @@ or using Rover to pipe your supergraph schema in
 > Note: Regardless if you are using Federation or not, you need to use the `rover graph fetch` command to mock
 
 ```sh-session
-$ rover graph fetch <graph ref> | npx github:@apollosolutions/graphql-mock-cli mock
+rover graph fetch <graph ref> > temp.graphql && npx github:@apollosolutions/graphql-mock-
+cli mock temp.graphql
 ```
 # Commands
 
