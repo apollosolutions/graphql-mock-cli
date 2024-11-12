@@ -26,3 +26,16 @@ yarn-error.log*
 ehthumbs.db
 *[Tt]humbs.db
 *.Trashes
+
+*-debug.log
+*-error.log
+**/.DS_Store
+
+# Build
+/dist
+/tmp
+oclif.manifest.json
+
+# Alt Node package managers
+yarn.lock
+pnpm-lock.yaml
