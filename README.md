@@ -25,7 +25,21 @@ USAGE
   $ graphql-mock-cli COMMAND
 ...
 ```
+
+To quickly mock a schema run the following
+```sh-session
+$ npx github:@apollosolutions/graphql-mock-cli mock <path to schema file>
+```
+
+or using Rover to pipe your supergraph schema in
+> Note: Regardless if you are using Federation or not, you need to use the `rover graph fetch` command to mock
+
+```sh-session
+rover graph fetch <graph ref> > temp.graphql && npx github:@apollosolutions/graphql-mock-
+cli mock temp.graphql
+```
 # Commands
+
 <!-- commands -->
 * [`graphql-mock-cli help [COMMAND]`](#graphql-mock-cli-help-command)
 * [`graphql-mock-cli mock SCHEMA`](#graphql-mock-cli-mock-schema)
