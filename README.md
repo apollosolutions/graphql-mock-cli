@@ -1,8 +1,6 @@
 @apollosolutions/graphql-mock-cli
 =================
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
-[![Version](https://img.shields.io/npm/v/@apollosolutions/graphql-mock-cli.svg)](https://npmjs.org/package/@apollosolutions/graphql-mock-cli)
-[![Downloads/week](https://img.shields.io/npm/dw/@apollosolutions/graphql-mock-cli.svg)](https://npmjs.org/package/@apollosolutions/graphql-mock-cli)
 
 Mock a GraphQL schema in one command
 
@@ -13,19 +11,20 @@ Mock a GraphQL schema in one command
 * [Commands](#commands)
 <!-- tocstop -->
 # Usage
-<!-- usage -->
+You can run the CLI using NPX directly on the repo.
+
 ```sh-session
-$ npm install -g @apollosolutions/graphql-mock-cli
-$ graphql-mock-cli COMMAND
+$ npx github:@apollosolutions/graphql-mock-cli COMMAND
 running command...
-$ graphql-mock-cli (--version)
-@apollosolutions/graphql-mock-cli/0.0.1 linux-x64 node-v18.20.4
-$ graphql-mock-cli --help [COMMAND]
+
+$ npx github:@apollosolutions/graphql-mock-cli --version
+@apollosolutions/graphql-mock-cli/0.0.1 darwin-arm64 node-v22.11.0
+
+$ npx github:@apollosolutions/graphql-mock-cli --help [COMMAND]
 USAGE
   $ graphql-mock-cli COMMAND
 ...
 ```
-<!-- usagestop -->
 # Commands
 <!-- commands -->
 * [`graphql-mock-cli help [COMMAND]`](#graphql-mock-cli-help-command)
