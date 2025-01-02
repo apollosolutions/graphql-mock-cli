@@ -1,0 +1,5 @@
+name: graphql-mock-cli
+description: A CLI tool to create a locally mocked GraphQL server.
+tags:
+  - Schema design
+  - Schema
